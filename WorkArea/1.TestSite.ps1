@@ -1,3 +1,9 @@
+git config --global user.email "conrad.gauntlett@awaze.com"
+  git config --global user.name "Conrad Gauntlett"
+
+  Install-Module Pode -Scope AllUsers -Force
+  Install-Module Pode.Web -Scope AllUsers -Force
+
 Import-Module Pode, Pode.Web
 
 Start-PodeServer {
@@ -16,3 +22,6 @@ Start-PodeServer {
 
 git config --global user.email "conrad.gauntlett@awaze.com"
   git config --global user.name "Conrad Gauntlett"
+
+  Install-Module Pode -Scope AllUsers -Force
+  Install-Module Pode.Web -Scope AllUsers -Force
