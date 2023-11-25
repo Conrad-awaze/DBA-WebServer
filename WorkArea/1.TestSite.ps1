@@ -1,3 +1,6 @@
+Install-Module -Name Microsoft.PowerShell.SecretManagement  -Scope AllUsers -Force
+Install-Module -Name Microsoft.PowerShell.SecretStore  -Scope AllUsers -Force
+
 Import-Module Pode, Pode.Web
 
 Start-PodeServer {
@@ -13,4 +16,3 @@ Start-PodeServer {
     }
 
 }
-
