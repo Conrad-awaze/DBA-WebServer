@@ -1,9 +1,3 @@
-git config --global user.email "conrad.gauntlett@awaze.com"
-  git config --global user.name "Conrad Gauntlett"
-
-  Install-Module Pode -Scope AllUsers -Force
-  Install-Module Pode.Web -Scope AllUsers -Force
-
 Import-Module Pode, Pode.Web
 
 Start-PodeServer {
@@ -12,16 +6,11 @@ Start-PodeServer {
 
     New-PodeLoggingMethod -Terminal | Enable-PodeErrorLogging -Levels @("Error", "Warning")
 
-    Use-PodeWebTemplates -Title "Passwords" -Theme Dark
+    Use-PodeWebTemplates -Title "EC2 Activity" -Theme Dark
 
-    Add-PodeWebPage -Name "Test Page" -scriptblock {
+    Add-PodeWebPage -Name "EC2 State Activity" -scriptblock {
 
     }
 
 }
 
-git config --global user.email "conrad.gauntlett@awaze.com"
-  git config --global user.name "Conrad Gauntlett"
-
-  Install-Module Pode -Scope AllUsers -Force
-  Install-Module Pode.Web -Scope AllUsers -Force
