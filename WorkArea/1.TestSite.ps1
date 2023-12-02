@@ -10,6 +10,17 @@ Start-PodeServer {
 
     Add-PodeWebPage -Name "EC2 State Activity" -scriptblock {
 
+        New-PodeWebCard -Content @(
+            New-PodeWebForm -Name 'Example' -ScriptBlock {
+
+                $date = $WebEvent.Data['Example_Date']
+                $WebEvent.Data | Out-Default
+            } -Content @(
+
+                New-PodeWebDateTime -Name 'Example' -Type Date
+            )
+        )
+
     }
 
 }
